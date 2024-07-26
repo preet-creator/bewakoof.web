@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+.banner {
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0,0,0.5)), url("https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://i.ibb.co/mqH5JHf/F-q-E0rz-Wo-AATJMo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navebar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    /*   cursor: pointer; */
+    /*   background-color: #FFEA11; */
+      margin-left: 5px;
+    }
+    
+    .navebar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px; 
+       /*padding: 0 20px; */
+        position: relative; 
+    
+    }
+    .navebar ul li a {
+        text-decoration: none;
+        color:#ffffff;
+        text-transform: capitalize;
+    }
+    .navebar ul li::after{
+        content: '';
+        height: 2px;
+        width: 0; /*100% */
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .navebar ul li:hover::after {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+    .content h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        margin-top: 80px;
+    }
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    button {
+    
+        width: 150px;
+        height: 40px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #000000;
+        background: transparent;
+        color:  #ffffff;
+        cursor: pointer;
+        position:relative;
+        overflow: hidden;
+        
+    }
+    span {
+        text-align: center;
+        background: #000000;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position:absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    
+    }
+    button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+.about{
+    text-align:center;
+    line-height:3;
+  }
+  .readmore
+{
+	background-color: #000000;
+   color: white;
+   border: 1px solid #000000;
+   margin-top: 1rem;
+   padding: 0.9rem 1.2rem;
+   font-family: "Monserrat", sans-serif;
+   font-size: 1rem;
+   font-weight: 200;
+   cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	
+
+}
+.readmore:hover {
+   background-color:#3f3939;
+   border: 1px solid #000000;
+}
+	
+.readmore-content
+{
+display: flex;
+	 justify-content: center;
+}
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+  width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+
+div#columns figure {
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+    display: grid;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+	width: 100%; height: 400px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption h3 {
+  font-size: 1.2rem;
+	color: #444;
+  line-height: 1.5;
+}
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
+figcaption p
+{
+	font-size: 0.7rem
+}
+figcaption button
+{
+	background-color: #000000;
+color: white;
+	 border: 1px solid #000000;
+   margin-top: 1rem;
+   padding: 0.7rem 1.2rem;
+   font-family: "Monserrat", sans-serif;
+   font-size: 0.8rem;
+   font-weight: 200;
+   cursor: pointer;
+	text-decoration: none;
+	position: relative;
+
+}
+figcaption button:hover
+{
+	  background-color: #3f3939;
+   border: 1px solid #000000;
+
+}
+
+footer{
+    width:100%;
+    background-color:#121619;
+    color:#fff;
+    }
+    .top_header{
+    padding:2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    }
+    .top_header section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    }
+    .top_header span{
+    padding:0 1rem;
+    }
+    #icons
+    {
+        
+    }
+    .top_header .fab {
+    color:#ffbe00;
+    font-size:20px;
+    }
+    
+    
+    
+    
+    .top_header span{
+    padding:0 1rem;
+    }
+    #icons
+    {
+        color:#ffbe00;
+    }
+    footer .fab {
+    color:#ffbe00;
+    font-size:20px;
+    }
+    
+    
+    .copyright{
+    padding:0.8em 0;
+    background-color:#1e1e1e;
+    text-align:center;
+    color:rgba(255,255,255,0.7);
+    font-size:12px;
+    }
+    footer .bottom_content section{
+    padding:1.5rem 2rem;
+    display:flex;
+    align-items:center;
+    justify-content:Center;
+    }
+    .bottom_content a{
+    margin:0 20px;
+    color:rgba(255,255,255,0.7);
+    transition:0.5s;
+    }
+    
+    .bottom_content a:hover{
+    color:rgba(255,255,255,1);
+    }
+     .line
+    {
+        border-top: 2px #FFBE00 dotted ;width: 15rem;
+    }
+    
+    
